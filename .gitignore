@@ -1,0 +1,27 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# pytest
+.pytest_cache/
+.coverage
+
+# Секреты
+.env
+
+# IDE
+.idea/          ← папка PyCharm
+.vscode/
+
+# Allure
+allure-results/
+
+# OS
+Thumbs.db       ← Windows
