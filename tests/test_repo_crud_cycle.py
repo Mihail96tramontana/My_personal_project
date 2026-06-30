@@ -2,7 +2,8 @@ import requests
 import time
 import allure
 
-
+@allure.feature('Тестирование репозитория')
+@allure.story('Позитивные сценарии')
 class TestCRUD:
     @allure.title('Проверка создания репозитория')
     @allure.description('Смотрим, что тестовая сущность (репозиторий) действительно создалась методом get (само создание вынесено в conftest.py)')
