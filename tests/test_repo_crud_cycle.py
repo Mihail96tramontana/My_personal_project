@@ -22,7 +22,7 @@ class TestCRUD:
     @allure.description('Обновляем описание репозитория методом patch')
     @allure.severity(allure.severity_level.NORMAL)
     def test_patch_description_repo(self, base_url, headers, repo_object_fixture):
-        with allure.step('Отправляет PATCH-запрос на обновление поля "description"'):
+        with allure.step(' PATCH-запрос на обновление поля "description"'):
             response = requests.patch(f'{base_url}/repos/Mihail96tramontana/{repo_object_fixture}',
                                   headers=headers,
                                   json={'description':'Обновлённое описание'})
